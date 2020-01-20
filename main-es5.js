@@ -3314,7 +3314,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 var fileEntry = droppedFile.fileEntry;
                 Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["concat"])(_this8.fileEntryFileObservable(fileEntry).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["concatMap"])(function (file) {
                   return _this8.firestoreService.uploadFile(droppedFile.relativePath, file);
-                })), _this8.firestoreService.getFileUrl(droppedFile.relativePath)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeLast"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(_this8.unsubscribe$)).subscribe(function (url) {
+                }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["ignoreElements"])()), _this8.firestoreService.getFileUrl(droppedFile.relativePath)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(_this8.unsubscribe$)).subscribe(function (url) {
                   --_this8.imagesDuringUpload;
 
                   _this8.imagesUrls.push(url);
@@ -4526,19 +4526,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! rxjs/operators */
     "./node_modules/rxjs/_esm2015/operators/index.js");
     /* harmony import */
 
 
-    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @angular/fire/firestore */
     "./node_modules/@angular/fire/__ivy_ngcc__/firestore/es2015/index.js");
     /* harmony import */
 
 
-    var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/fire/storage */
     "./node_modules/@angular/fire/__ivy_ngcc__/storage/es2015/index.js");
 
@@ -4567,7 +4573,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this._newsCollection = this.afs.collection(_app_services_firestore_firestore_collections__WEBPACK_IMPORTED_MODULE_2__["FirestoreCollections"].NEWS, function (ref) {
             return ref.orderBy('modified', 'desc');
           });
-          this._newsList$ = this._newsCollection.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (actions) {
+          this._newsList$ = this._newsCollection.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (actions) {
             return actions.map(function (a) {
               var data = a.payload.doc.data();
               var id = a.payload.doc.id;
@@ -4580,7 +4586,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getNewsForGivenUser",
         value: function getNewsForGivenUser(userId) {
-          return this._newsList$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (news) {
+          return this._newsList$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (news) {
             return news.filter(function (item) {
               return item.author.id === userId;
             });
@@ -4656,12 +4662,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "uploadFile",
         value: function uploadFile(filePath, file) {
           var ref = this.storage.ref(filePath);
-          return ref.put(file).snapshotChanges();
+          return ref.put(file).percentageChanges();
         }
       }, {
         key: "getFileUrl",
         value: function getFileUrl(filePath) {
-          return this.storage.ref(filePath).getDownloadURL();
+          var _this11 = this;
+
+          return new rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"](function (observer) {
+            return _this11.storage.ref(filePath).getDownloadURL().subscribe(function (value) {
+              observer.next(value);
+              observer.complete();
+            });
+          });
         }
       }, {
         key: "getNewsDoc",
@@ -4679,7 +4692,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "loadNewNews",
         value: function loadNewNews(id) {
           var newsDoc = this.afs.doc("".concat(_app_services_firestore_firestore_collections__WEBPACK_IMPORTED_MODULE_2__["FirestoreCollections"].NEWS, "/").concat(id));
-          var newsItem = newsDoc.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (source) {
+          var newsItem = newsDoc.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (source) {
             var data = source.payload.data();
             return Object.assign({
               id: id
@@ -4747,7 +4760,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     FirestoreService.ɵfac = function FirestoreService_Factory(t) {
-      return new (t || FirestoreService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__["AngularFirestore"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_fire_storage__WEBPACK_IMPORTED_MODULE_5__["AngularFireStorage"]));
+      return new (t || FirestoreService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__["AngularFirestore"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_fire_storage__WEBPACK_IMPORTED_MODULE_6__["AngularFireStorage"]));
     };
 
     FirestoreService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
@@ -4765,9 +4778,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [{
-          type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__["AngularFirestore"]
+          type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__["AngularFirestore"]
         }, {
-          type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_5__["AngularFireStorage"]
+          type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_6__["AngularFireStorage"]
         }];
       }, null);
     })();
@@ -5058,13 +5071,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "loadEditedUser",
         value: function loadEditedUser() {
-          var _this11 = this;
+          var _this12 = this;
 
           this.userId = this.route.snapshot.paramMap.get('id');
           this.firestoreService.getUser(this.userId).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.unsubscribe$)).subscribe(function (user) {
-            _this11.editedUser = user;
+            _this12.editedUser = user;
 
-            _this11.buildForm();
+            _this12.buildForm();
           });
         }
       }, {
