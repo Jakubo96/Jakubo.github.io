@@ -508,6 +508,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var ngx_toastr__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
     /*! ngx-toastr */
     "./node_modules/ngx-toastr/__ivy_ngcc__/fesm2015/ngx-toastr.js");
+    /* harmony import */
+
+
+    var _app_auth_directives_is_author_or_admin_directive__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    /*! @app/auth/directives/is-author-or-admin.directive */
+    "./src/app/auth/directives/is-author-or-admin.directive.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -526,7 +532,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _app_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _app_news_news_list_news_list_component__WEBPACK_IMPORTED_MODULE_10__["NewsListComponent"], _app_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_11__["PageNotFoundComponent"], _app_news_news_detail_news_detail_component__WEBPACK_IMPORTED_MODULE_16__["NewsDetailComponent"], _app_news_create_news_create_news_component__WEBPACK_IMPORTED_MODULE_17__["CreateNewsComponent"], _app_images_carousel_images_carousel_component__WEBPACK_IMPORTED_MODULE_18__["ImagesCarouselComponent"], _app_auth_login_login_component__WEBPACK_IMPORTED_MODULE_19__["LoginComponent"], _app_auth_login_register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"], _app_auth_not_authorized_not_authorized_component__WEBPACK_IMPORTED_MODULE_21__["NotAuthorizedComponent"], _app_auth_directives_is_creator_or_admin_directive__WEBPACK_IMPORTED_MODULE_15__["IsCreatorOrAdminDirective"], _app_auth_login_phone_login_phone_login_component__WEBPACK_IMPORTED_MODULE_22__["PhoneLoginComponent"], _app_users_manage_users_manage_users_component__WEBPACK_IMPORTED_MODULE_23__["ManageUsersComponent"], _app_auth_directives_is_admin_directive__WEBPACK_IMPORTED_MODULE_24__["IsAdminDirective"], _app_users_edit_user_edit_user_component__WEBPACK_IMPORTED_MODULE_25__["EditUserComponent"]],
+        declarations: [_app_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _app_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _app_news_news_list_news_list_component__WEBPACK_IMPORTED_MODULE_10__["NewsListComponent"], _app_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_11__["PageNotFoundComponent"], _app_news_news_detail_news_detail_component__WEBPACK_IMPORTED_MODULE_16__["NewsDetailComponent"], _app_news_create_news_create_news_component__WEBPACK_IMPORTED_MODULE_17__["CreateNewsComponent"], _app_images_carousel_images_carousel_component__WEBPACK_IMPORTED_MODULE_18__["ImagesCarouselComponent"], _app_auth_login_login_component__WEBPACK_IMPORTED_MODULE_19__["LoginComponent"], _app_auth_login_register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"], _app_auth_not_authorized_not_authorized_component__WEBPACK_IMPORTED_MODULE_21__["NotAuthorizedComponent"], _app_auth_directives_is_creator_or_admin_directive__WEBPACK_IMPORTED_MODULE_15__["IsCreatorOrAdminDirective"], _app_auth_login_phone_login_phone_login_component__WEBPACK_IMPORTED_MODULE_22__["PhoneLoginComponent"], _app_users_manage_users_manage_users_component__WEBPACK_IMPORTED_MODULE_23__["ManageUsersComponent"], _app_auth_directives_is_admin_directive__WEBPACK_IMPORTED_MODULE_24__["IsAdminDirective"], _app_users_edit_user_edit_user_component__WEBPACK_IMPORTED_MODULE_25__["EditUserComponent"], _app_auth_directives_is_author_or_admin_directive__WEBPACK_IMPORTED_MODULE_28__["IsAuthorOrAdminDirective"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NgbModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_4__["AngularFireModule"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__["AngularFirestoreModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], ngx_file_drop__WEBPACK_IMPORTED_MODULE_12__["NgxFileDropModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_13__["AngularFireStorageModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_14__["AngularFireAuthModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_26__["BrowserAnimationsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_27__["ToastrModule"]]
       });
     })();
@@ -537,7 +543,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _app_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _app_news_news_list_news_list_component__WEBPACK_IMPORTED_MODULE_10__["NewsListComponent"], _app_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_11__["PageNotFoundComponent"], _app_news_news_detail_news_detail_component__WEBPACK_IMPORTED_MODULE_16__["NewsDetailComponent"], _app_news_create_news_create_news_component__WEBPACK_IMPORTED_MODULE_17__["CreateNewsComponent"], _app_images_carousel_images_carousel_component__WEBPACK_IMPORTED_MODULE_18__["ImagesCarouselComponent"], _app_auth_login_login_component__WEBPACK_IMPORTED_MODULE_19__["LoginComponent"], _app_auth_login_register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"], _app_auth_not_authorized_not_authorized_component__WEBPACK_IMPORTED_MODULE_21__["NotAuthorizedComponent"], _app_auth_directives_is_creator_or_admin_directive__WEBPACK_IMPORTED_MODULE_15__["IsCreatorOrAdminDirective"], _app_auth_login_phone_login_phone_login_component__WEBPACK_IMPORTED_MODULE_22__["PhoneLoginComponent"], _app_users_manage_users_manage_users_component__WEBPACK_IMPORTED_MODULE_23__["ManageUsersComponent"], _app_auth_directives_is_admin_directive__WEBPACK_IMPORTED_MODULE_24__["IsAdminDirective"], _app_users_edit_user_edit_user_component__WEBPACK_IMPORTED_MODULE_25__["EditUserComponent"]],
+          declarations: [_app_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _app_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _app_news_news_list_news_list_component__WEBPACK_IMPORTED_MODULE_10__["NewsListComponent"], _app_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_11__["PageNotFoundComponent"], _app_news_news_detail_news_detail_component__WEBPACK_IMPORTED_MODULE_16__["NewsDetailComponent"], _app_news_create_news_create_news_component__WEBPACK_IMPORTED_MODULE_17__["CreateNewsComponent"], _app_images_carousel_images_carousel_component__WEBPACK_IMPORTED_MODULE_18__["ImagesCarouselComponent"], _app_auth_login_login_component__WEBPACK_IMPORTED_MODULE_19__["LoginComponent"], _app_auth_login_register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"], _app_auth_not_authorized_not_authorized_component__WEBPACK_IMPORTED_MODULE_21__["NotAuthorizedComponent"], _app_auth_directives_is_creator_or_admin_directive__WEBPACK_IMPORTED_MODULE_15__["IsCreatorOrAdminDirective"], _app_auth_login_phone_login_phone_login_component__WEBPACK_IMPORTED_MODULE_22__["PhoneLoginComponent"], _app_users_manage_users_manage_users_component__WEBPACK_IMPORTED_MODULE_23__["ManageUsersComponent"], _app_auth_directives_is_admin_directive__WEBPACK_IMPORTED_MODULE_24__["IsAdminDirective"], _app_users_edit_user_edit_user_component__WEBPACK_IMPORTED_MODULE_25__["EditUserComponent"], _app_auth_directives_is_author_or_admin_directive__WEBPACK_IMPORTED_MODULE_28__["IsAuthorOrAdminDirective"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NgbModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_4__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].firebase), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__["AngularFirestoreModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], ngx_file_drop__WEBPACK_IMPORTED_MODULE_12__["NgxFileDropModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_13__["AngularFireStorageModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_14__["AngularFireAuthModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_26__["BrowserAnimationsModule"], ngx_toastr__WEBPACK_IMPORTED_MODULE_27__["ToastrModule"].forRoot()],
           bootstrap: [_app_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
         }]
@@ -675,6 +681,133 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/auth/directives/is-author-or-admin.directive.ts":
+  /*!*****************************************************************!*\
+    !*** ./src/app/auth/directives/is-author-or-admin.directive.ts ***!
+    \*****************************************************************/
+
+  /*! exports provided: IsAuthorOrAdminDirective */
+
+  /***/
+  function srcAppAuthDirectivesIsAuthorOrAdminDirectiveTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "IsAuthorOrAdminDirective", function () {
+      return IsAuthorOrAdminDirective;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var _app_auth_services_firebase_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @app/auth/services/firebase-auth.service */
+    "./src/app/auth/services/firebase-auth.service.ts");
+
+    var IsAuthorOrAdminDirective =
+    /*#__PURE__*/
+    function () {
+      function IsAuthorOrAdminDirective(viewContainerRef, templateRef, firebaseAuth) {
+        _classCallCheck(this, IsAuthorOrAdminDirective);
+
+        this.viewContainerRef = viewContainerRef;
+        this.templateRef = templateRef;
+        this.firebaseAuth = firebaseAuth;
+        this.isVisible = false;
+        this.unsubscribe$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+      }
+
+      _createClass(IsAuthorOrAdminDirective, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.updateTemplateState();
+        }
+      }, {
+        key: "ngOnDestroy",
+        value: function ngOnDestroy() {
+          this.unsubscribe$.next();
+          this.unsubscribe$.complete();
+        }
+      }, {
+        key: "updateTemplateState",
+        value: function updateTemplateState() {
+          var _this2 = this;
+
+          this.checkPermissions().subscribe(function (isPermitted) {
+            if (isPermitted && !_this2.isVisible) {
+              _this2.isVisible = true;
+
+              _this2.viewContainerRef.createEmbeddedView(_this2.templateRef);
+            } else if (!isPermitted) {
+              _this2.isVisible = false;
+
+              _this2.viewContainerRef.clear();
+            }
+          });
+        }
+      }, {
+        key: "checkPermissions",
+        value: function checkPermissions() {
+          return this.firebaseAuth.user.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["takeUntil"])(this.unsubscribe$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (user) {
+            return user && (user.roles.author || user.roles.admin);
+          }));
+        }
+      }]);
+
+      return IsAuthorOrAdminDirective;
+    }();
+
+    IsAuthorOrAdminDirective.ɵfac = function IsAuthorOrAdminDirective_Factory(t) {
+      return new (t || IsAuthorOrAdminDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_app_auth_services_firebase_auth_service__WEBPACK_IMPORTED_MODULE_3__["FirebaseAuthService"]));
+    };
+
+    IsAuthorOrAdminDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      type: IsAuthorOrAdminDirective,
+      selectors: [["", "appIsAuthorOrAdmin", ""]]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](IsAuthorOrAdminDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"],
+        args: [{
+          selector: '[appIsAuthorOrAdmin]'
+        }]
+      }], function () {
+        return [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"]
+        }, {
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]
+        }, {
+          type: _app_auth_services_firebase_auth_service__WEBPACK_IMPORTED_MODULE_3__["FirebaseAuthService"]
+        }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
   "./src/app/auth/directives/is-creator-or-admin.directive.ts":
   /*!******************************************************************!*\
     !*** ./src/app/auth/directives/is-creator-or-admin.directive.ts ***!
@@ -745,27 +878,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "updateTemplateState",
         value: function updateTemplateState() {
-          var _this2 = this;
+          var _this3 = this;
 
           this.checkPermissions().subscribe(function (isPermitted) {
-            if (isPermitted && !_this2.isVisible) {
-              _this2.isVisible = true;
+            if (isPermitted && !_this3.isVisible) {
+              _this3.isVisible = true;
 
-              _this2.viewContainerRef.createEmbeddedView(_this2.templateRef);
+              _this3.viewContainerRef.createEmbeddedView(_this3.templateRef);
             } else if (!isPermitted) {
-              _this2.isVisible = false;
+              _this3.isVisible = false;
 
-              _this2.viewContainerRef.clear();
+              _this3.viewContainerRef.clear();
             }
           });
         }
       }, {
         key: "checkPermissions",
         value: function checkPermissions() {
-          var _this3 = this;
+          var _this4 = this;
 
           return this.firebaseAuth.user.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["takeUntil"])(this.unsubscribe$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (user) {
-            return user && (user.roles.author && _this3.appIsCreatorOrAdmin === user.id || user.roles.admin);
+            return user && (user.roles.author && _this4.appIsCreatorOrAdmin === user.id || user.roles.admin);
           }));
         }
       }]);
@@ -2074,7 +2207,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(AuthGuard, [{
         key: "canActivate",
         value: function canActivate(route, state) {
-          var _this4 = this;
+          var _this5 = this;
 
           var routeConfig = route.routeConfig;
 
@@ -2084,13 +2217,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           if (routeConfig.accessAllowedTo) {
             return this.firebaseAuth.user.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(function (user) {
-              return user && user.roles[routeConfig.accessAllowedTo] ? true : _this4.accessDeniedUrlTree;
+              return user && user.roles[routeConfig.accessAllowedTo] ? true : _this5.accessDeniedUrlTree;
             }));
           }
 
           if (routeConfig.thisUserOrAdmin) {
             return this.firebaseAuth.user.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(function (user) {
-              return user && (user.id === route.paramMap.get('id') || user.roles.admin) ? true : _this4.accessDeniedUrlTree;
+              return user && (user.id === route.paramMap.get('id') || user.roles.admin) ? true : _this5.accessDeniedUrlTree;
             }));
           }
 
@@ -2208,7 +2341,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*#__PURE__*/
     function () {
       function FirebaseAuthService(afAuth, firestoreService) {
-        var _this5 = this;
+        var _this6 = this;
 
         _classCallCheck(this, FirebaseAuthService);
 
@@ -2217,9 +2350,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this._user = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](null);
         this.unsubscribe$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
         this.afAuth.user.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])(function (user) {
-          return user ? _this5.firestoreService.getUser(user.uid) : Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(null);
+          return user ? _this6.firestoreService.getUser(user.uid) : Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(null);
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.unsubscribe$)).subscribe(function (user) {
-          return _this5._user.next(user);
+          return _this6._user.next(user);
         });
       }
 
@@ -2420,13 +2553,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "createUserDoc",
         value: function createUserDoc(authData) {
-          var _this6 = this;
+          var _this7 = this;
 
           var userData = Object.assign({}, new _app_auth_user__WEBPACK_IMPORTED_MODULE_4__["User"](authData));
           var doc = this.firestoreService.getUser(authData.uid);
           doc.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.unsubscribe$)).subscribe(function (user) {
             if (!user) {
-              _this6.firestoreService.createUser(authData.uid, userData);
+              _this7.firestoreService.createUser(authData.uid, userData);
             }
           });
         }
@@ -2596,21 +2729,41 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_auth_directives_is_admin_directive__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _app_auth_directives_is_author_or_admin_directive__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @app/auth/directives/is-author-or-admin.directive */
+    "./src/app/auth/directives/is-author-or-admin.directive.ts");
+    /* harmony import */
+
+
+    var _app_auth_directives_is_admin_directive__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @app/auth/directives/is-admin.directive */
     "./src/app/auth/directives/is-admin.directive.ts");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
-    function HeaderComponent_li_10_Template(rf, ctx) {
+    function HeaderComponent_li_7_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li", 10);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "a", 11);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Create news");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      }
+    }
+
+    function HeaderComponent_li_8_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li", 10);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "a", 12);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Manage users");
 
@@ -2620,26 +2773,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function HeaderComponent_div_11_Template(rf, ctx) {
+    function HeaderComponent_div_9_Template(rf, ctx) {
       if (rf & 1) {
-        var _r41 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+        var _r42 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 13);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "button", 14);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "button", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "button", 15);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HeaderComponent_div_11_Template_button_click_3_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r41);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HeaderComponent_div_9_Template_button_click_3_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r42);
 
-          var ctx_r40 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+          var ctx_r41 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
 
-          return ctx_r40.logout();
+          return ctx_r41.logout();
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, " Logout ");
@@ -2650,21 +2803,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       if (rf & 2) {
-        var user_r39 = ctx.ngIf;
+        var user_r40 = ctx.ngIf;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("routerLink", "/users/" + user_r39.id);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("routerLink", "/users/" + user_r40.id);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", user_r39.name ? user_r39.name : user_r39.email ? user_r39.email : user_r39.id, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", user_r40.name ? user_r40.name : user_r40.email ? user_r40.email : user_r40.id, " ");
       }
     }
 
-    function HeaderComponent_ng_template_13_Template(rf, ctx) {
+    function HeaderComponent_ng_template_11_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "button", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "button", 16);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " Login ");
 
@@ -2720,9 +2873,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
       type: HeaderComponent,
       selectors: [["app-header"]],
-      decls: 15,
+      decls: 13,
       vars: 4,
-      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", "bg-light", "mb-4"], ["routerLink", "/news", 1, "navbar-brand"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarText", "aria-controls", "navbarText", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarText", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], [1, "nav-item"], ["routerLink", "/create", 1, "nav-link"], ["class", "nav-item", 4, "appIsAdmin"], ["class", "d-flex", 4, "ngIf", "ngIfElse"], ["login", ""], ["routerLink", "/users", 1, "nav-link"], [1, "d-flex"], [1, "btn", "btn-link", 3, "routerLink"], [1, "btn", "btn-danger", "ml-4", 3, "click"], ["routerLink", "/login", 1, "btn", "btn-success"]],
+      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", "bg-light", "mb-4"], ["routerLink", "/news", 1, "navbar-brand"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarText", "aria-controls", "navbarText", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarText", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], ["class", "nav-item", 4, "appIsAuthorOrAdmin"], ["class", "nav-item", 4, "appIsAdmin"], ["class", "d-flex", 4, "ngIf", "ngIfElse"], ["login", ""], [1, "nav-item"], ["routerLink", "/create", 1, "nav-link"], ["routerLink", "/users", 1, "nav-link"], [1, "d-flex"], [1, "btn", "btn-link", 3, "routerLink"], [1, "btn", "btn-danger", "ml-4", 3, "click"], ["routerLink", "/login", 1, "btn", "btn-success"]],
       template: function HeaderComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nav", 0);
@@ -2743,25 +2896,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "ul", 5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "li", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, HeaderComponent_li_7_Template, 3, 0, "li", 6);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "a", 7);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](9, "Create news");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](8, HeaderComponent_li_8_Template, 3, 0, "li", 7);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](9, HeaderComponent_div_9_Template, 5, 2, "div", 8);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](10, HeaderComponent_li_10_Template, 3, 0, "li", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](10, "async");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](11, HeaderComponent_div_11_Template, 5, 2, "div", 9);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](12, "async");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](13, HeaderComponent_ng_template_13_Template, 2, 0, "ng-template", null, 10, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](11, HeaderComponent_ng_template_11_Template, 2, 0, "ng-template", null, 9, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2769,15 +2914,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
 
         if (rf & 2) {
-          var _r37 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](14);
+          var _r38 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](12);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](9);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](12, 2, ctx.firebaseAuth.user))("ngIfElse", _r37);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](10, 2, ctx.firebaseAuth.user))("ngIfElse", _r38);
         }
       },
-      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbNavbar"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLinkWithHref"], _app_auth_directives_is_admin_directive__WEBPACK_IMPORTED_MODULE_6__["IsAdminDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLink"]],
-      pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["AsyncPipe"]],
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbNavbar"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLinkWithHref"], _app_auth_directives_is_author_or_admin_directive__WEBPACK_IMPORTED_MODULE_6__["IsAuthorOrAdminDirective"], _app_auth_directives_is_admin_directive__WEBPACK_IMPORTED_MODULE_7__["IsAdminDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterLink"]],
+      pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["AsyncPipe"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LnNjc3MifQ== */"]
     });
     /*@__PURE__*/
@@ -2844,18 +2989,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     function ImagesCarouselComponent_ngb_carousel_0_1_ng_template_0_Template(rf, ctx) {
       if (rf & 1) {
-        var _r49 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        var _r50 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 4);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("dblclick", function ImagesCarouselComponent_ngb_carousel_0_1_ng_template_0_Template_div_dblclick_0_listener($event) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r49);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r50);
 
-          var i_r45 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().index;
+          var i_r46 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().index;
 
-          var ctx_r47 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+          var ctx_r48 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
 
-          return ctx_r47.removeUrl(i_r45);
+          return ctx_r48.removeUrl(i_r46);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 5);
@@ -2864,11 +3009,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       if (rf & 2) {
-        var url_r44 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+        var url_r45 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", url_r44, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", url_r45, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
       }
     }
 
@@ -2888,13 +3033,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       if (rf & 2) {
-        var ctx_r42 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+        var ctx_r43 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("showNavigationArrows", true)("showNavigationIndicators", true);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r42.imagesUrls);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r43.imagesUrls);
       }
     }
 
@@ -3150,7 +3295,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "dropped",
         value: function dropped(files) {
-          var _this7 = this;
+          var _this8 = this;
 
           var _iteratorNormalCompletion = true;
           var _didIteratorError = false;
@@ -3160,17 +3305,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             var _loop = function _loop() {
               var droppedFile = _step.value;
 
-              if (_this7.isFileAllowed(droppedFile)) {
-                ++_this7.imagesDuringUpload;
+              if (_this8.isFileAllowed(droppedFile)) {
+                ++_this8.imagesDuringUpload;
                 var fileEntry = droppedFile.fileEntry;
-                Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["concat"])(_this7.fileEntryFileObservable(fileEntry).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["concatMap"])(function (file) {
-                  return _this7.firestoreService.uploadFile(droppedFile.relativePath, file);
-                })), _this7.firestoreService.getFileUrl(droppedFile.relativePath)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeLast"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(_this7.unsubscribe$)).subscribe(function (url) {
-                  --_this7.imagesDuringUpload;
+                Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["concat"])(_this8.fileEntryFileObservable(fileEntry).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["concatMap"])(function (file) {
+                  return _this8.firestoreService.uploadFile(droppedFile.relativePath, file);
+                })), _this8.firestoreService.getFileUrl(droppedFile.relativePath)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeLast"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(_this8.unsubscribe$)).subscribe(function (url) {
+                  --_this8.imagesDuringUpload;
 
-                  _this7.imagesUrls.push(url);
+                  _this8.imagesUrls.push(url);
 
-                  _this7.toastr.success(null, 'Image uploaded');
+                  _this8.toastr.success(null, 'Image uploaded');
                 });
               }
             };
@@ -3286,7 +3431,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "loadNewsData",
         value: function loadNewsData() {
-          var _this8 = this;
+          var _this9 = this;
 
           this.newsId = this.route.snapshot.paramMap.get('id');
 
@@ -3295,15 +3440,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
 
           this.firestoreService.getNews(this.newsId).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(function (news) {
-            if (!_this8.canUserModifyThisNews(news.author)) {
-              _this8.router.navigate(['/unauthorized']);
+            if (!_this9.canUserModifyThisNews(news.author)) {
+              _this9.router.navigate(['/unauthorized']);
             }
           }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(this.unsubscribe$)).subscribe(function (newsItem) {
-            _this8.title.setValue(newsItem.title);
+            _this9.title.setValue(newsItem.title);
 
-            _this8.content.setValue(newsItem.content);
+            _this9.content.setValue(newsItem.content);
 
-            _this8.imagesUrls = newsItem.imagesUrls;
+            _this9.imagesUrls = newsItem.imagesUrls;
           });
         }
       }, {
@@ -4128,7 +4273,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "loadNewsList",
         value: function loadNewsList() {
-          var _this9 = this;
+          var _this10 = this;
 
           var userId = this.route.snapshot.queryParamMap.get('userId');
 
@@ -4144,7 +4289,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 news = _ref2[0],
                 page = _ref2[1];
 
-            return _this9.newsListPage = news.slice(_this9.pageSize * (page - 1), _this9.pageSize * page);
+            return _this10.newsListPage = news.slice(_this10.pageSize * (page - 1), _this10.pageSize * page);
           });
         }
       }, {
@@ -4909,13 +5054,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "loadEditedUser",
         value: function loadEditedUser() {
-          var _this10 = this;
+          var _this11 = this;
 
           this.userId = this.route.snapshot.paramMap.get('id');
           this.firestoreService.getUser(this.userId).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.unsubscribe$)).subscribe(function (user) {
-            _this10.editedUser = user;
+            _this11.editedUser = user;
 
-            _this10.buildForm();
+            _this11.buildForm();
           });
         }
       }, {
